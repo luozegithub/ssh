@@ -3,6 +3,7 @@ package com.chen.service.impl;
 import com.chen.dao.UserDao;
 import com.chen.entity.UsersEntity;
 import com.chen.service.UserService;
+import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
 import java.util.List;
@@ -11,9 +12,11 @@ import java.util.List;
  * 用户service实现
  * Created by chen on 2017/4/12.
  */
+@Service("userService")
 public class UserServiceImpl extends BaseServiceImpl<UsersEntity> implements UserService {
-    @Resource
     private UserDao userDao;
+
+    @Resource
     public void setUserDao(UserDao userDao) {
         super.setBaseDao(userDao);
         this.userDao = userDao;

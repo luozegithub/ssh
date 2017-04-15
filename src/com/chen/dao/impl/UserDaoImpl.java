@@ -17,6 +17,6 @@ public class UserDaoImpl extends BaseDaoImpl<UsersEntity> implements UserDao {
         List params = new ArrayList<String>();
         params.add(id);
         params.add(pwd);
-        return findObjects("from UsersEntity where user_id = ? and pwd = ?", params);
+        return findObjects("from UsersEntity where user_email = ? and user_pwd = ?", params);
     }
 }

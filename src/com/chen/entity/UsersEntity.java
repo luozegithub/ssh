@@ -1,12 +1,12 @@
 package com.chen.entity;
 
 /**
- * Created by chen on 2017/4/12.
+ * Created by chen on 2017/4/13.
  */
 public class UsersEntity {
     private String userEmail;
     private String userName;
-    private Integer userPwd;
+    private String userPwd;
 
     public String getUserEmail() {
         return userEmail;
@@ -24,11 +24,11 @@ public class UsersEntity {
         this.userName = userName;
     }
 
-    public Integer getUserPwd() {
+    public String getUserPwd() {
         return userPwd;
     }
 
-    public void setUserPwd(Integer userPwd) {
+    public void setUserPwd(String userPwd) {
         this.userPwd = userPwd;
     }
 

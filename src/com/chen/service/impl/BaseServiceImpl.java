@@ -23,6 +23,7 @@ public class BaseServiceImpl<T> implements BaseDao<T> {
 
     @Override
     public void save(T entity) {
+        this.baseDao.save(entity);
 
     }
 

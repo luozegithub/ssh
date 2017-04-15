@@ -16,7 +16,7 @@ public class BaseDaoImpl<T> extends HibernateDaoSupport implements BaseDao<T> {
     Class<T> clazz;
 
     public BaseDaoImpl() {
-        ParameterizedType pt = (ParameterizedType) this.clazz.getGenericSuperclass();
+        ParameterizedType pt = (ParameterizedType) this.getClass().getGenericSuperclass();
         clazz = (Class<T>) pt.getActualTypeArguments()[0];
     }
 
