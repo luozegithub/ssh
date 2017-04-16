@@ -11,6 +11,7 @@
     <title>注册</title>
 </head>
 <body>
+<div align="center">
     <form action="home_doRegist.action" method="post">
         邮箱:<input type="text" name="user.userEmail"/><br/>
         姓名:<input type="text" name="user.userName"/><br/>
@@ -18,5 +19,6 @@
         <font color="red">${msg}</font><br/>
         <input type="submit" value="注册"/><a href="login.jsp">登录</a>
     </form>
+</div>
 </body>
 </html>

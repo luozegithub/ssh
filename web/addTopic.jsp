@@ -11,10 +11,12 @@
     <title>添加一个新的话题</title>
 </head>
 <body>
+<div align="center">
 <form method="post" action="topic_addTopic.action">
     话题标题:<input name="topicEntity.topicTitile" type="text"/><br/>
     话题描述:<input name="topicEntity.topicDescribe" type="text" /><br/>
     <input type="submit" value="提交"/>
 </form>
+</div>
 </body>
 </html>

@@ -22,7 +22,8 @@
         </tr>
             <c:forEach items="${topicEntityList}" var="item">
                  <tr>
-                    <td>${item.topicTitile}</td><td>${item.userName}</td>
+                     <td>><a href="topic_showTopic.action?topicEntity.topicId=${item.topicId}"> ${item.topicTitile}</a></td>
+                     <td>${item.userName}</td>
                  </tr>
             </c:forEach>
     </table>

@@ -17,6 +17,7 @@
         <action name="topic_*" class="com.chen.action.TopicAction" method="{1}">
             <result name="{1}">/{1}.jsp</result>
             <result name="listAll">/listAll.jsp</result>
+            <result name="showTopic">/showTopic.jsp</result>
         </action>
     </package>
 </struts>

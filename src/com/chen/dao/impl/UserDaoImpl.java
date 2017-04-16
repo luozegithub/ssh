@@ -12,6 +12,12 @@ import java.util.List;
  */
 public class UserDaoImpl extends BaseDaoImpl<UsersEntity> implements UserDao {
 
+    /**
+     *
+     * @param id 要查询的用户di
+     * @param pwd 用查询的用户密码
+     * @return 找到的对象
+     */
     @Override
     public List<UsersEntity> findUserByIdAndPwd(String id, String pwd) {
         List params = new ArrayList<String>();

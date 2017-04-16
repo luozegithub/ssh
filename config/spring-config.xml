@@ -54,6 +54,7 @@
                  <value>classpath:cn/chen/nsfw/*/entity/*.hbm.xml</value>-->
                 <value>classpath:com/chen/entity/UsersEntity.hbm.xml</value>
                 <value>classpath:com/chen/entity/TopicEntity.hbm.xml</value>
+                <value>classpath:com/chen/entity/CommentEntity.hbm.xml</value>
             </list>
         </property>
     </bean>
@@ -91,6 +92,7 @@
 
     <bean id="userDao" class="com.chen.dao.impl.UserDaoImpl" parent="baseDao"/>
     <bean id="topicDao" class="com.chen.dao.impl.TopicDaoImpl" parent="baseDao"/>
+    <bean id="commentDao" class="com.chen.dao.impl.CommentDaoImpl" parent="baseDao"/>
 
     <!--扫描service-->
     <context:component-scan base-package="com.chen.service.impl"/>

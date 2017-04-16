@@ -11,11 +11,13 @@
     <title>登录</title>
 </head>
 <body>
+    <div align="center">
     <form action="home_doLogin.action" method="post">
         邮箱:<input type="text" name="user.userEmail"/><br/>
         密码:<input type="password" name="user.userPwd"/><br/>
         <font color="red">${msg}</font><br/>
         <input type="submit" value="登录"/><a href="regist.jsp">注册</a>
     </form>
+    </div>
 </body>
 </html>

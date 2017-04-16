@@ -1,13 +1,12 @@
 package com.chen.dao;
 
 import com.chen.entity.CommentEntity;
-import com.chen.entity.TopicEntity;
 
 import java.util.List;
 
 /**
  * Created by chen on 2017/4/16.
  */
-public interface TopicDao extends BaseDao<TopicEntity> {
-
+public interface CommentDao extends BaseDao<CommentEntity> {
+    public List<CommentEntity> findByTopicId(int id);
 }
