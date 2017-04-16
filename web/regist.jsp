@@ -11,10 +11,11 @@
     <title>注册</title>
 </head>
 <body>
-    <form action="doRegist.action" method="post">
+    <form action="home_doRegist.action" method="post">
         邮箱:<input type="text" name="user.userEmail"/><br/>
         姓名:<input type="text" name="user.userName"/><br/>
         密码:<input type="password" name="user.userPwd"/><br/>
+        <font color="red">${msg}</font><br/>
         <input type="submit" value="注册"/><a href="login.jsp">登录</a>
     </form>
 </body>
