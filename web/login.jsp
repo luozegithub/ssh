@@ -1,23 +1,47 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: chen
-  Date: 2017/4/13
-  Time: 22:56
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>登录</title>
+    <title>Login</title>
+    <script src="js/bootstrap-3.3.0-dist/dist/css/bootstrap.min.css"></script>
+    <script src="js/bootstrap-3.3.0-dist/dist/js/jquery.min.js"></script>
+    <script src="js/bootstrap-3.3.0-dist/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/bootstrap-3.3.0-dist/dist/css/bootstrap.min.css">
+
 </head>
 <body>
-    <div align="center">
-    <form action="home_doLogin.action" method="post">
-        邮箱:<input type="text" name="user.userEmail"/><br/>
-        密码:<input type="password" name="user.userPwd"/><br/>
-        <font color="red">${msg}</font><br/>
-        <input type="submit" value="登录"/><a href="regist.jsp">注册</a>
-    </form>
+<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div class="page-header">
+                <h1>
+                    Test Struts2 MVC<small>loginUI</small>
+                </h1>
+            </div>
+            <div class="row clearfix">
+                <div class="col-md-4 column">
+                </div>
+                <div class="col-md-4 column">
+                    <form role="form" action="home_doLogin.action" method="post">
+                        <div class="form-group">
+                            <label for="exampleInputEmail1">Email</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" name="user.userEmail" value="${user.userEmail}"/>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Password</label>
+                            <input type="password" class="form-control" id="exampleInputPassword1" name="user.userPwd" value="${user.userPwd}"/>
+                        </div>
+                        <div><font color="red">${msg}</font></div>
+                        <button type="submit" class="btn btn-default" name="submit">Submit</button>
+                        <a href="regist.jsp"> <button type="button" class="btn btn-default" >Register</button></a>
+                    </form>
+                </div>
+                <div class="col-md-4 column">
+                </div>
+            </div>
+        </div>
     </div>
+</div>
+
+
 </body>
 </html>
